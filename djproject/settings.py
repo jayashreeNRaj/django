@@ -25,7 +25,7 @@ SECRET_KEY = '_+v_9_j6(z(d8^rgy(hv1!zjm(05s8+)=tzdsc$3=@scy)hp5_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True #true-localhost,cloud-false
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['desolate-castle-68266.herokuapp.com']
 
 
 # Application definition
