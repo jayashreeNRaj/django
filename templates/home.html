@@ -1,0 +1,25 @@
+{% extends 'base/layout.html' %}
+{% load static %}
+{% block content %}
+hello hii!!!
+ <form action="" method="POST">
+    {% csrf_token %}{{form.as_table}}
+    <br><br><br>
+    <input type="text" name="" id="" class="form-control" maxlength="10" minlength="2" placeholder="Some Text" required="true"autofocus="true">
+    <br>
+    <input type="email" name="" id="" class="form-control" maxlength="10" minlength="2" placeholder="Email" required="true"autofocus="true">
+    <br>
+    <input type="number" name="" id="" class="form-control" maxlength="10" minlength="2" placeholder="Number" required="true"autofocus="true">
+    <br>
+    <input type="Submit" name="Submit">
+</form>
+
+{% block userdefine %}
+hello comes from home page
+
+<ul>
+    {% for i in 'hello' %}
+    <li>{{i}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
